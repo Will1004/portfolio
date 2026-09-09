@@ -8,7 +8,7 @@ tel une candidature, une mise en avant personnelle ou du réseautage.
 Thème « terminal / hacker » sobre : anthracite + accent vert, typographie monospace,
 responsive, chargement rapide, aucune dépendance au réseau au chargement.
 
-Ligne de vie en ligne : `https://C1PH3R6H05T.github.io/portfolio/`
+Ligne de vie en ligne : `https://Will1004.github.io/portfolio/`
 
 > ⏫ **Personnalisable pour une offre précise** : le paragraphe « À propos »,
 > le badge du hero (`.hero__status`) et l'accent mis sur telle expérience se
@@ -61,15 +61,14 @@ bien voir le typewriter / les filtres.)
 
 ## 🚀 Publier sur GitHub Pages (recommandé)
 
-Ce dépôt est câblé pour **`C1PH3R6H05T/portfolio`** :
+Ce dépôt est câblé pour **`Will1004/portfolio`** (login GitHub réel du compte) :
 
 1. **Crée le dépôt sur GitHub** : https://github.com/new
-   - Owner : choisis ton compte perso **C1PH3R6H05T** (si le pseudo n'existe pas
-     encore sur ton compte, renomme le dépôt/le profil d'abord depuis
-     *GitHub → Settings → Profile*, ou utilise le pseudo de ton choix).
+   - Owner : compte perso **Will1004** (le login du compte ; le nom affiché
+     sur le site, lui, reste **C1PH3R6H05T** — purement cosmétique).
    - Repository name : **`portfolio`** — Public.
    - **Ne coche PAS** « Add a README / .gitignore » (les fichiers locaux sont déjà prêts).
-2. Pousse les fichiers (déjà initialisables en git) :
+2. Pousse les fichiers (déjà initialisés en git) :
 
    ```bash
    cd ~/Documents/perso/portfolio
@@ -78,25 +77,17 @@ Ce dépôt est câblé pour **`C1PH3R6H05T/portfolio`** :
    — ou à la main :
    ```bash
    git init && git add -A && git commit -m "Initial portfolio"
-   git remote add origin https://github.com/C1PH3R6H05T/portfolio.git
+   git remote add origin https://github.com/Will1004/portfolio.git
    git branch -M main
    git push -u origin main
    ```
 3. **Active GitHub Pages** : sur le dépôt → *Settings → Pages → Build and deployment
    → Source : Deploy from a branch → Branch `main` + `/ (root)` → Save*.
-4. Ça y est, le site est en ligne sur **`https://C1PH3R6H05T.github.io/portfolio/`**.
+4. Ça y est, le site est en ligne sur **`https://Will1004.github.io/portfolio/`**.
 
 > La canonique (`<link rel="canonical">`), les balises Open Graph / Twitter et les
-> URLs `CONTACT` pointent déjà vers cette adresse. Une fois en ligne, fais un
+> URLs de contact pointent déjà vers cette adresse. Une fois en ligne, fais un
 > test de partage LinkedIn/WhatsApp pour vérifier l'aperçu.
-
-### Woula, pas de compte à son nom ?
-Si `C1PH3R6H05T` n'est pas encore rattaché à ton compte GitHub, tu as deux choix :
-- **Rattacher le pseudo** d'abord (GitHub → Settings → Public profile), puis re-pousser ;
-- Ou, en attendant, **Netlify Drop** sans Git : glisse-dépose le dossier sur
-  https://app.netlify.com/drop → tu obtiens une URL temporaire du type
-  `https://<hash>.netlify.app/` à partager avec ton dossier. Pense simplement à
-  harmoniser les URLs (`data.js`, lien *canonical*) si tu changes de pseudo.
 
 ---
 
@@ -122,7 +113,7 @@ Si `C1PH3R6H05T` n'est pas encore rattaché à ton compte GitHub, tu as deux cho
 
 ## ✅ Pense-bête avant d'envoyer
 
-- [ ] Le pseudo GitHub `C1PH3R6H05T` existe et le dépôt `portfolio` est public
+- [ ] Le login GitHub `Will1004` existe et le dépôt `portfolio` est public
 - [ ] GitHub Pages a servi une fois (URL verte) et le contenu s'affiche
 - [ ] Liens LinkedIn / Root Me / HackerLab valides dans `data.js`
 - [ ] Bouton *Télécharger mon CV* : vérifie `Wilfrid_Agbassikakou_CV.pdf` à jour

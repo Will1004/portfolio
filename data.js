@@ -2,7 +2,7 @@
  * data.js — le cœur du portfolio. Édite ce fichier, pas le HTML.
  *
  * Paramètres à personnaliser sur ta machine avant de pousser : voir PROFILE ci-dessous
- * (GITHUB_HANDLE déjà réglé sur C1PH3R6H05T).
+ * (pseudo GitHub = Will1004 ; nom affiché/brand handle = C1PH3R6H05T).
  *
  * Charte d'honnêteté : contenu 100 % vérifiable et présentable.
  *  - Les write-ups décrivent des capabilités réelles (stage Port Autonome de Cotonou +
@@ -26,7 +26,7 @@ const PROFILE = {
     "Cloud Security",
     "CTF Player",
   ],
-  github: "https://github.com/C1PH3R6H05T",
+  github: "https://github.com/Will1004",
   linkedin: "https://www.linkedin.com/in/C1PH3R6H05T",
   rootme: "https://www.root-me.org/C1PH3R6H05T",
   hackerlab: "https://app.hackerlab.bj/",
@@ -191,8 +191,8 @@ const PROJETS = [
       "Monter un domaine AD volontairement vulnérable pour s'entraîner aux chaînes d'exploitation et, en parallèle, définir des règles de détection SOC exploitables.",
     result:
       "5 chaînes d'exploitation AD exploitées et documentées ; chaque chaîne rejouée comme scénario de détection (requête SIGMA + mapping MITRE ATT&CK).",
-    repo: "C1PH3R6H05T/ad-lab",
-    link: "https://github.com/C1PH3R6H05T/ad-lab",
+    repo: "Will1004/ad-lab",
+    link: "https://github.com/Will1004/ad-lab",
   },
   {
     title: "Lab SOC autonome — Elastic · Grafana · Wazuh",
@@ -201,8 +201,8 @@ const PROJETS = [
       "Déployer une stack complète de collecte de logs et de supervision pour simuler une posture SOC sur des services auto-hébergés en lab.",
     result:
       "Orchestration via Docker Compose, collecte des logs conteneurs/OS, règles Wazuh, tableau de bord Grafana ; procédure documentée pour reproduire le lab.",
-    repo: "C1PH3R6H05T/soc-lab",
-    link: "https://github.com/C1PH3R6H05T/soc-lab",
+    repo: "Will1004/soc-lab",
+    link: "https://github.com/Will1004/soc-lab",
   },
   {
     title: "Scripts de recon automatisée (Bash / Python)",
@@ -211,8 +211,8 @@ const PROJETS = [
       "Automatiser les premières étapes de reconnaissance (lookup DNS, en-têtes HTTP, alerte de changement de surface) pour gagner du temps en phase d'audit.",
     result:
       "Bibliothèque de scripts réutilisables et versionnés ; CI exécutée sur dépôt afin de produire un rapport de surface à chaque push.",
-    repo: "C1PH3R6H05T/recon-toolkit",
-    link: "https://github.com/C1PH3R6H05T/recon-toolkit",
+    repo: "Will1004/recon-toolkit",
+    link: "https://github.com/Will1004/recon-toolkit",
   },
   {
     title: "Maîtrise cloud & sécurité de la supply-chain applicative",
@@ -221,8 +221,8 @@ const PROJETS = [
       "Automatiser le scan de sécurité des images (Trivy), durcir les manifests et surveiller les workloads conteneurisés (Falco) dès l'intégration.",
     result:
       "Scan Trivy branché sur le pipeline, rapport de vulnérabilités par image, première init à un déploiement Terraform d'un cluster minimal.",
-    repo: "C1PH3R6H05T/cloud-sec-foundations",
-    link: "https://github.com/C1PH3R6H05T/cloud-sec-foundations",
+    repo: "Will1004/cloud-sec-foundations",
+    link: "https://github.com/Will1004/cloud-sec-foundations",
   },
 ];
 

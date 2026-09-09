@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # ============================================================
-# deploy.sh — publie le portfolio sur GitHub Pages (C1PH3R6H05T/portfolio)
+# deploy.sh — publie le portfolio sur GitHub Pages (Will1004/portfolio)
 #
 # Prérequis :
-#   1. Le pseudo GitHub C1PH3R6H05T existe sur ton compte (ou adapte le OWNER ci-dessous)
+#   1. Le pseudo GitHub Will1004 existe sur ton compte (ou adapte le OWNER ci-dessous)
 #   2. Un dépôt PUBLIC nommé "portfolio" a été créé sur github.com/new
 #      (de préférence SANS README/.gitignore générés automatiquement)
 #   3. gh CLI connecté OU tu as tes identifiants / clé SSH (voir DEPLOY_VIA)
@@ -12,7 +12,7 @@
 # ============================================================
 set -euo pipefail
 
-OWNER="${1:-C1PH3R6H05T}"      # ← ton pseudo GitHub perso
+OWNER="${1:-Will1004}"         # ← ton pseudo GitHub perso (login réel du compte)
 REPO="portfolio"
 REMOTE="origin"
 BRANCH="main"
