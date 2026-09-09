@@ -1,0 +1,9 @@
+# Cache / fichiers auto-générés
+*.log
+.DS_Store
+Thumbs.db
+node_modules/
+.sass-cache/
+.env
+.env.*
+*.tmp

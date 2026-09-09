@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow" />
+  <meta name="author" content="Wilfrid Agbassikakou" />
+  <meta name="description"
+        content="Portfolio de Wilfrid Agbassikakou — Purple Team Analyst | Offensive Security | SecOps | Cloud Security. Write-ups CTF détaillés, projets techniques, compétences et expérience." />
+  <meta name="keywords" content="cybersécurité, offensive security, purple team, secops, soc, pentest, CTF, writeup, Active Directory, cloud security" />
+  <title>Wilfrid Agbassikakou — Purple Team Analyst · Offensive Security · SecOps</title>
+
+  <!-- FAVICON (SVG inline, aucun fichier externe) -->
+  <link rel="icon" type="image/svg+xml"
+        href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="20" fill="%2321262d"/><text x="50" y="70" font-size="46" text-anchor="middle" font-family="monospace" font-weight="bold" fill="%233fb950">&gt;_</text></svg>' />
+
+  <!-- OPEN GRAPH (partage LinkedIn/WhatsApp) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Wilfrid Agbassikakou — Portfolio" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content="Wilfrid Agbassikakou — Purple Team Analyst & Offensive Security" />
+  <meta property="og:description"
+        content="Write-ups CTF détaillés, lab AD vulnérable, stack SOC (Elastic/Grafana/Wazuh), scripts de recon. Pentest web & réseau, détection SOC." />
+  <meta property="og:url" content="https://C1PH3R6H05T.github.io/portfolio/" />
+  <!-- <meta property="og:image" content="https://C1PH3R6H05T.github.io/portfolio/og-cover.png" /> -->
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Wilfrid Agbassikakou — Purple Team Analyst & Offensive Security" />
+  <meta name="twitter:description"
+        content="Write-ups CTF détaillés, lab AD/SOC, scripts de recon. Pentest web & réseau, détection SOC." />
+
+  <!-- CANONICAL -->
+  <link rel="canonical" href="https://C1PH3R6H05T.github.io/portfolio/" />
+
+  <!-- STYLE -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ======= JSON-LD Person (SEO Schema.org) ======= -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Wilfrid Agbassikakou",
+    "jobTitle": "Purple Team Analyst | Offensive Security | SecOps | Cloud Security",
+    "description": "Analyste cybersécurité Purple Team / Offensive Security / SecOps — CTF player.",
+    "email": "mailto:Willk0971@gmail.com",
+    "address": "Cotonou, Menontin, Bénin",
+    "sameAs": [
+      "https://github.com/C1PH3R6H05T",
+      "https://www.linkedin.com/in/C1PH3R6H05T",
+      "https://www.root-me.org/C1PH3R6H05T"
+    ]
+  }
+  </script>
+
+  <!-- ============ NAV ============ -->
+  <header class="site-header" role="banner">
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="nav__brand" href="#hero"><code>~$ wilfrid</code></a>
+      <button class="nav__toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#writeups">Write-ups CTF</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#veille">Veille</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ 1. HERO ============ -->
+    <section id="hero" class="hero">
+      <div class="hero__inner">
+        <span class="hero__status">● Disponible pour mission, stage &amp; collaborations</span>
+        <h1 class="hero__name">WILFRID <span class="hero__type">AGBASSIKAKOU</span></h1>
+        <p class="hero__title" id="typewriter" aria-live="polite"></p>
+        <p class="hero__tagline" id="tagline"></p>
+        <div class="hero__cta">
+          <a class="btn" href="#writeups">Explorer les write-ups</a>
+          <a class="btn btn--ghost" href="#projets">Projets techniques</a>
+          <a class="btn btn--accent" href="Wilfrid_Agbassikakou_CV.pdf" download>⬇ Télécharger mon CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS (preuve chiffrée) ============ -->
+    <section class="stats-band" aria-label="Quelques chiffres">
+      <div class="container stats">
+        <div class="stat"><strong id="statSolved">—</strong><span>challenges résolus</span></div>
+        <div class="stat"><strong id="statWriteups">—</strong><span>write-ups publiés</span></div>
+        <div class="stat"><strong id="statCtfs">—</strong><span>plateformes CTF</span></div>
+        <div class="stat"><strong id="statEcowas">–</strong><span>ECOWAS 2025</span></div>
+      </div>
+    </section>
+
+    <!-- ============ 2. À PROPOS ============ -->
+    <section id="apropos" class="section" style="padding-top:20px">
+      <div class="container">
+        <h2 class="section__title">&gt; _qui_je_suis</h2>
+        <div class="grid grid--about">
+          <div class="card">
+            <h3>Parcours</h3>
+            <ul>
+              <li><strong>Licence en Sécurité Informatique</strong> — 2025</li>
+              <li>Baccalauréat série C — 2022</li>
+              <li>Basé à Cotonou, Menontin, Bénin</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Certifications</h3>
+            <ul class="cert-list" id="certList"></ul>
+          </div>
+          <div class="card card--span-2">
+            <p>
+              Analyste cybersécurité orienté <strong>Purple Team</strong> : je travaille côté attaque
+              pour éprouver la défense, et côté défense pour fiabiliser ce que l'attaque révèle.
+              Compétiteur CTF régulier sur <strong>HackerLab</strong>, <strong>Root Me</strong> et
+              <strong>PicoCTF</strong>, impliqué aux qualificatifs nationaux <strong>CTF ECOWAS 2025</strong>.
+            </p>
+            <blockquote class="quote" id="quoteBox"></blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. WRITE-UPS CTF ============ -->
+    <section id="writeups" class="section section--band">
+      <div class="container">
+        <h2 class="section__title">&gt; _writeups_ctf</h2>
+        <p class="section__desc">
+          Le cœur du portfolio : chaque write-up détaille <strong>contexte</strong> →
+          <strong>méthodologie</strong> (recon → vulnérabilité → exploitation → flag) →
+          <strong>outils</strong> → <strong>leçon</strong>. Filtrable par catégorie.
+        </p>
+        <div class="filters" id="filters" role="toolbar" aria-label="Filtrer les write-ups par catégorie"></div>
+        <div class="cards-grid" id="ctfGrid" aria-live="polite"></div>
+        <noscript>
+          <p class="noscript">Active le JavaScript pour afficher les write-ups et leurs filtres.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ============ 4. PROJETS ============ -->
+    <section id="projets" class="section">
+      <div class="container">
+        <h2 class="section__title">&gt; _projets</h2>
+        <p class="section__desc">Des réalisations concrètes en lab et en configuration, versionnées sur GitHub.</p>
+        <div class="cards-grid" id="projetsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ PROFILE BADGE + PLATEFORMES ============ -->
+    <section id="plateformes" class="section section--band" style="padding-top:30px">
+      <div class="container">
+        <h2 class="section__title">&gt; _mes_profils_publiques</h2>
+        <p class="section__desc">Profils vérifiables, plate aussi en veille de la progression (Root Me · HackerLab · GitHub).</p>
+        <div class="profile-links" id="profileLinks"></div>
+      </div>
+    </section>
+
+    <!-- ============ 5. COMPÉTENCES ============ -->
+    <section id="competences" class="section">
+      <div class="container">
+        <h2 class="section__title">&gt; _compétences</h2>
+        <div id="skills"></div>
+      </div>
+    </section>
+
+    <!-- ============ 6. EXPÉRIENCE ============ -->
+    <section id="experience" class="section section--band" style="padding-top:30px">
+      <div class="container">
+        <h2 class="section__title">&gt; _expérience</h2>
+        <article class="exp">
+          <header class="exp__header">
+            <h3>Stagiaire en Sécurité Informatique</h3>
+            <span class="exp__org">Port Autonome de Cotonou (PAC)</span>
+            <span class="exp__date">Sept. 2024 → Mar. 2025</span>
+          </header>
+          <ul class="exp__list">
+            <li>Campagnes de sensibilisation du personnel (phishing simulé) avec <strong>Gophish</strong>.</li>
+            <li>Identification de vulnérabilités serveurs, réseau &amp; architecture client–serveur.</li>
+            <li>Exploitation Web encadrée : <strong>injection SQL</strong> (sqlmap), <strong>exfiltration de cookies XSS</strong>.</li>
+            <li>Rédaction de rapports d'audit avec remédiation proposée par ordre de priorité.</li>
+          </ul>
+        </article>
+        <article class="exp">
+          <header class="exp__header">
+            <h3>Compétiteur CTF</h3>
+            <span class="exp__org">Qualificatifs nationaux CTF ECOWAS 2025</span>
+            <span class="exp__date">2025</span>
+          </header>
+          <ul class="exp__list">
+            <li>Résolution en équipe de challenges <strong>Web, Cryptographie, Stéganographie</strong>.</li>
+            <li>Pratique continue HackerLab / Root Me / PicoCTF en catégories AD, post-exploitation, privesc, password attacks, OSINT.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ VEILLE ============ -->
+    <section id="veille" class="section">
+      <div class="container">
+        <h2 class="section__title">&gt; _veille_&amp;_en_apprentissage</h2>
+        <p class="section__desc">Ne pas être un CV figé : ce que j'apprends et creuse en ce moment.</p>
+        <div class="veille-list" id="veilleList"></div>
+      </div>
+    </section>
+
+    <!-- ============ 7. CONTACT ============ -->
+    <footer class="section footer-contact" id="contact">
+      <div class="container">
+        <h2 class="section__title">&gt; _me_contacter</h2>
+        <p class="section__desc">Une mission, un stage, un challenge à partager ? Disponible.</p>
+        <ul class="contact-list" id="contactList"></ul>
+      </div>
+      <div class="container footer-note">
+        <p>© 2026 Wilfrid Agbassikakou · <code>think_attacker · build_engineer</code></p>
+        <p class="foot-rss"><code>+ disponible sur GitHub Pages · partage links chauds</code></p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
