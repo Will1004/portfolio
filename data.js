@@ -185,44 +185,54 @@ const WRITEUPS = [
    ============================================================ */
 const PROJETS = [
   {
-    title: "Lab Active Directory vulnérable & ses règles de détection",
-    stack: ["Windows Server", "Active Directory", "BloodHound", "SIGMA", "Kali", "Docker"],
+    title: "SignFlow — SaaS de signature électronique multi-tenant",
+    stack: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Docker", "Vitest"],
     objective:
-      "Monter un domaine AD volontairement vulnérable pour s'entraîner aux chaînes d'exploitation et, en parallèle, définir des règles de détection SOC exploitables.",
+      "Concevoir une plateforme de signature électronique où chaque organisation cliente travaille en isolation complète : parcours de signature multi-participants, horodatage, coffre de documents et journal d'audit inaltérable.",
     result:
-      "5 chaînes d'exploitation AD exploitées et documentées ; chaque chaîne rejouée comme scénario de détection (requête SIGMA + mapping MITRE ATT&CK).",
-    repo: "Will1004/ad-lab",
-    link: "https://github.com/Will1004/ad-lab",
+      "Application complète en production : modèle multi-tenant étanche, moteur de workflow de signature, génération de PDF horodatés avec preuve d'intégrité, API REST documentée et suite de tests d'intégration couvrant l'isolation entre locataires.",
+    repo: "Will1004/signflow",
+    link: "https://github.com/Will1004/signflow",
   },
   {
-    title: "Lab SOC autonome — Elastic · Grafana · Wazuh",
-    stack: ["Docker", "Docker Compose", "Elasticsearch", "Grafana", "Wazuh", "Falco"],
+    title: "Infrastructure as Code — provisioning Ansible multi-serveurs",
+    stack: ["Ansible", "Docker", "WireGuard", "Bash", "GitHub Actions"],
     objective:
-      "Déployer une stack complète de collecte de logs et de supervision pour simuler une posture SOC sur des services auto-hébergés en lab.",
+      "Remplacer les procédures d'administration manuelles par des playbooks idempotents : déploiement d'applications, migration de sites, audit de sécurité et interconnexion VPN d'un parc hétérogène.",
     result:
-      "Orchestration via Docker Compose, collecte des logs conteneurs/OS, règles Wazuh, tableau de bord Grafana ; procédure documentée pour reproduire le lab.",
-    repo: "Will1004/soc-lab",
-    link: "https://github.com/Will1004/soc-lab",
+      "6 playbooks couvrant l'ensemble du cycle de vie d'un parc (provisioning, déploiement, sauvegarde/migration, audit, VPN) ; secrets gérés hors dépôt via Ansible Vault ; relance sans effet de bord.",
+    repo: "Will1004/ansible-infra-automation",
+    link: "https://github.com/Will1004/ansible-infra-automation",
   },
   {
-    title: "Scripts de recon automatisée (Bash / Python)",
-    stack: ["Bash", "Python", "Git", "CI (GitHub Actions)"],
+    title: "Stack de supervision auto-hébergée (Prometheus · Grafana · Loki)",
+    stack: ["Prometheus", "Grafana", "Loki", "Alertmanager", "Docker Compose"],
     objective:
-      "Automatiser les premières étapes de reconnaissance (lookup DNS, en-têtes HTTP, alerte de changement de surface) pour gagner du temps en phase d'audit.",
+      "Déployer une supervision complète — métriques, logs, dashboards et sondes de disponibilité externe — où un serveur central collecte et les machines surveillées n'ont qu'un agent léger à installer.",
     result:
-      "Bibliothèque de scripts réutilisables et versionnés ; CI exécutée sur dépôt afin de produire un rapport de surface à chaque push.",
-    repo: "Will1004/recon-toolkit",
-    link: "https://github.com/Will1004/recon-toolkit",
+      "Stack reproductible en une commande : rétention métriques 30 jours, dashboards provisionnés par fichier, alerting avec groupement et inhibition, sondes HTTP/TLS externes ; ajouter une machine ne demande aucune modification du cœur.",
+    repo: "Will1004/monitoring-stack",
+    link: "https://github.com/Will1004/monitoring-stack",
   },
   {
-    title: "Maîtrise cloud & sécurité de la supply-chain applicative",
-    stack: ["Docker", "Kubernetes", "Trivy", "Falco", "Terraform"],
+    title: "BH Proxy — assistant de test d'API pour programmes de bug bounty",
+    stack: ["JavaScript", "Chrome MV3", "WebExtensions API"],
     objective:
-      "Automatiser le scan de sécurité des images (Trivy), durcir les manifests et surveiller les workloads conteneurisés (Falco) dès l'intégration.",
+      "Industrialiser la partie répétitive d'un audit d'API : capture automatique de la session, découverte des points d'entrée, puis exécution d'une batterie de tests de sécurité directement dans le contexte de la page.",
     result:
-      "Scan Trivy branché sur le pipeline, rapport de vulnérabilités par image, première init à un déploiement Terraform d'un cluster minimal.",
-    repo: "Will1004/cloud-sec-foundations",
-    link: "https://github.com/Will1004/cloud-sec-foundations",
+      "Extension Chrome couvrant 17 familles de tests — JWT (alg=none, HS256), IDOR, injection SQL, manipulation de prix, quantité négative, abus de coupon, contrôle d'accès au panier, découverte Swagger ; résultats exportables en JSON pour le rapport.",
+    repo: "Will1004/bugbounty-toolkit",
+    link: "https://github.com/Will1004/bugbounty-toolkit",
+  },
+  {
+    title: "Chaîne CI/CD — du commit au déploiement automatisé",
+    stack: ["GitHub Actions", "Node.js", "Jest", "SSH"],
+    objective:
+      "Mettre en place une chaîne d'intégration et de déploiement continus où aucune mise en production ne peut précéder un test rouge.",
+    result:
+      "Pipeline GitHub Actions : tests exécutés sur matrice Node 18/20, installation reproductible par verrou, job de déploiement conditionné au succès des tests et restreint à la branche principale ; permissions du jeton réduites au strict nécessaire.",
+    repo: "Will1004/Calculatrice",
+    link: "https://github.com/Will1004/Calculatrice",
   },
 ];
 
